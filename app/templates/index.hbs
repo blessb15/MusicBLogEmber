@@ -1,0 +1,26 @@
+
+
+
+<div class="main-content">
+  <div class="aside-left">
+    <!--new article shit -->
+    {{new-article saveArticle= "saveArticle"}}
+
+  </div>
+  <h2>Articles</h2>
+
+  <div class="article-content">
+
+    {{#each model as |article|}}
+      {{article-tile article=article updateArticle="updateArticle" delete="delete"}}
+    {{/each}}
+  </div>
+</div>
+
+<div class="aside-right">
+  <!--something cool -->
+  Sed sed lacinia ipsum. Nunc cursus eros et eros imperdiet, et tempor dolor lobortis. Donec nec aliquet nunc. Nunc enim metus, scelerisque a erat sit amet, lacinia lobortis diam. Etiam varius id nisi in porttitor. Integer vehicula tempor nibh, sed ultrices tortor placerat eu. Aenean egestas arcu felis, id volutpat felis tempus ut. Aliquam auctor scelerisque neque ut luctus.
+
+Vestibulum elementum, magna eleifend iaculis faucibus, sapien ipsum accumsan tellus, vitae dapibus nisi dolor sed mi. Vivamus ut eros in arcu porttitor viverra eu in nibh. Cras varius lacus magna, et tristique nisl cursus sit amet. Pellentesque augue ante, porttitor non est id, sagittis pretium nisl. Nullam blandit, nisi non sagittis volutpat, libero erat tristique nulla, et egestas velit augue in lorem. Etiam in eleifend orci. Aliquam sollicitudin arcu ut nulla hendrerit, sed pharetra lacus sodales. Aenean nec lorem porta mauris gravida posuere sit amet sit amet magna. Sed nec purus turpis. Maecenas quis aliquet purus, vitae gravida dolor. Quisque facilisis molestie tellus, sit amet venenatis sem posuere tincidunt. In odio ipsum, blandit ac nisl a, auctor vehicula augue. Integer sed tortor eget mauris consectetur placerat. Vivamus pretium convallis condimentum. Nulla eros orci, dignissim at gravida sit amet, ultricies vel metus. Aliquam eget laoreet urna.
+
+</div>

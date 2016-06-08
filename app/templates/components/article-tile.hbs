@@ -1,0 +1,10 @@
+<div class="article">
+
+  <p><img src={{article.imageUrl}} width="300px"></p>
+  <div class="sub-content">
+    {{article.title}}, {{article.author}}
+  </div>
+  {{update-article article=article updateArticle = "
+  updateArticle"}}
+  <button{{action 'delete' article}}>Delete</button>
+</div>

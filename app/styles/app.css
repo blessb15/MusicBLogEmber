@@ -1,0 +1,165 @@
+@font-face {
+    font-family: futuro;
+    src: url(../futuroNormal.ttf);
+}
+@font-face {
+    font-family: drift;
+    src: url(../drift.ttf);
+}
+@font-face {
+    font-family: dom;
+    src: url(../Dominique.ttf);
+}
+
+header {
+  clear: both;
+  width: 100%;
+  height: 350px;
+}
+
+header h1 {
+  color: white;
+  font-family: futuro;
+  font-size: 100px;
+  clear: both;
+  margin: auto;
+  display: inline-block ;
+  text-align: center;
+  position: relative;
+  right: 10%;
+  top: 320px;
+  text-shadow: 2px 2px 2px black;
+
+}
+
+.header-background {
+  height: 100%;
+  /*background-color: lightgray;*/
+  background-image: url('../bg.jpg');
+  background-size: cover;;
+  background-repeat: no-repeat;
+}
+
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: right;
+  position: relative;
+  width: 400px;
+  top: 350px;
+  right: 10px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+li {
+  display: inline-block;
+  width: 33.333%;
+  color: white;
+  font-family: drift;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-content {
+  margin-top: 2%;
+  width: 100%;
+  clear: both;
+}
+
+.aside-left {
+  float: left;
+  width: 25%;
+  height: 600px;
+}
+
+.main-content h2 {
+  padding-left: 20%;
+  text-align: left;
+  font-family: drift;
+}
+
+.article-content {
+  float: left;
+  margin: auto;
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+
+}
+
+.aside-right {
+  width: 25%;
+  float: left;
+  height: 600px;
+  font-family: futuro;
+  padding: 1%;
+}
+img {
+  box-shadow: 0 2px 2px 2px black;
+}
+.form-content {
+  display: block;
+  margin: auto;
+  width: inherit;
+}
+.form-content h1 {
+  text-align: center;
+  font-family: futuro;
+}
+form {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: auto;
+  border: none;
+  background-color: inherit;
+  font-family: dom;
+  font-size: 20px;
+}
+
+button:hover {
+  text-shadow: 2px 2px 2px black;
+}
+
+.aside-left button {
+  padding: 2%;
+}
+
+label {
+  font-family: futuro;
+}
+
+.sub-content {
+  font-family: futuro;
+  color: black;
+}
+
+footer {
+  clear: both;
+  background-image: url('../footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: block;
+  margin: auto;
+  width: 60%;
+}
