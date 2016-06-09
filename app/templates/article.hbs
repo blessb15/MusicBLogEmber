@@ -1,0 +1,24 @@
+<main class="cf">
+  <div class="article-image cf">
+    <img src="{{model.imageUrl}}" width="300px">
+
+    <div class="comment cf">
+      {{#each model.comments as |comment|}}
+        {{comment-tile comment = comment}}
+      {{/each}}
+    </div>
+    <div class="button">
+      {{new-comment article=model saveComment="saveComment"}}
+    </div>
+  </div>
+
+  <div class="article-detail-content cf">
+    <h1> {{model.title}}</h1>
+
+      <p>
+        {{model.content}}
+      </p>
+      <li>{{model.author}}</li>
+  </div>
+
+</main>

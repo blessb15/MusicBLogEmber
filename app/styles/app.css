@@ -1,3 +1,32 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/****************************************************************************/
+
 @font-face {
     font-family: futuro;
     src: url(../futuroNormal.ttf);
@@ -93,6 +122,10 @@ a:hover {
   font-family: drift;
 }
 
+main {
+  margin-top: 3%;
+}
+
 .article-content {
   float: left;
   margin: auto;
@@ -100,10 +133,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
-
 }
-
 .aside-right {
   width: 25%;
   float: left;
@@ -115,9 +145,10 @@ img {
   box-shadow: 0 2px 2px 2px black;
 }
 .form-content {
+  clear: both;
   display: block;
   margin: auto;
-  width: inherit;
+  width: 50%;
 }
 .form-content h1 {
   text-align: center;
@@ -162,4 +193,74 @@ footer {
   display: block;
   margin: auto;
   width: 60%;
+}
+
+.article-detail-content {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+
+}
+
+.article-image {
+  float: left;
+  margin-left: 10%;
+  width: 25%;
+}
+
+.article-image img {
+  float: left;
+}
+
+.article-detail-content h1 {
+  float: left;
+  margin-left: 10%;
+  font-family: dom;
+}
+.article-main-content {
+  display: block;
+  margin: auto;
+  text-align: center;
+  clear: both;
+
+}
+.article-image p {
+  display: block;
+  padding-left: 5%;
+  width: 50%;
+  float: left;
+  font-family: futuro;
+  color: black;
+}
+
+.comment {
+  width: 100%;
+  display: block;
+  margin: auto;
+  position:relative;
+}
+
+.comment p {
+  margin: auto;
+  display: block;
+  text-align: center;
+
+}
+
+.text {
+  text-align: left;
+  font-size: 20px;
+  padding: 0;
+}
+
+strong {
+  text-decoration: underline;
+}
+
+.button {
+  display: block;
+  margin: auto;
+
+
 }

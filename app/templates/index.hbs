@@ -11,13 +11,14 @@
 
   <div class="article-content">
 
-    {{#each model as |article|}}
+    {{#each model.articles as |article|}}
       {{article-tile article=article updateArticle="updateArticle" delete="delete"}}
     {{/each}}
   </div>
 </div>
 
 <div class="aside-right">
+  <h2>Latest Entry</h2>
   <!--something cool -->
   Sed sed lacinia ipsum. Nunc cursus eros et eros imperdiet, et tempor dolor lobortis. Donec nec aliquet nunc. Nunc enim metus, scelerisque a erat sit amet, lacinia lobortis diam. Etiam varius id nisi in porttitor. Integer vehicula tempor nibh, sed ultrices tortor placerat eu. Aenean egestas arcu felis, id volutpat felis tempus ut. Aliquam auctor scelerisque neque ut luctus.
 
